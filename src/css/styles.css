@@ -1,0 +1,52 @@
+body {
+  width: 400px;
+}
+
+#toggleInternalLinks.form-check-input, #toggleInternalLinks.form-check-input:checked {
+  background-color: #eaeaea;
+  border-color: #888;
+}
+
+#toggleInternalLinks.form-check-input {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='red'/%3e%3c/svg%3e");
+}
+
+#toggleInternalLinks.form-check-input:focus {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='red'/%3e%3c/svg%3e");
+}
+
+#backlinks-table-wrapper {
+  font-size: 12px;
+  max-height: 300px; /* Limit height of the task list */
+  overflow-y: auto; /* Make task list scrollable */
+  margin-bottom: 1rem; /* Spacing below the task list */
+  scrollbar-width: thin;
+}
+
+#backlinks-table-wrapper::-webkit-scrollbar {
+  width: 8px; /* Adjust the width as desired */
+}
+
+#backlinks-table-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Set the background color of the scrollbar track */
+}
+
+#backlinks-table-wrapper::-webkit-scrollbar-thumb {
+  background: #888; /* Set the color of the scrollbar thumb */
+}
+
+#backlinks-table-wrapper:hover::-webkit-scrollbar-thumb {
+  background: #555; /* Set the color of the scrollbar thumb when hovered */
+}
+
+#backlinks-table-wrapper .backlink-anchor img {
+  max-width: 100%;
+}
+
+#backlinks-table-wrapper .backlink-anchor, #backlinks-table-wrapper .backlink-domain {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  max-width: 150px;
+}

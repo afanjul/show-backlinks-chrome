@@ -1,0 +1,45 @@
+{
+  "name": "Backlink Analyzer",
+  "manifest_version": 3,
+  "author": "Alejandro Fanjul",
+  "homepage_url": "https://www.alejandrofanjul.com",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "storage",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "action": {
+    "default_icon": {
+      "32": "resources/icons/icon.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "resources/js/cash.min.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+D",
+        "mac": "MacCtrl+Shift+D"
+      }
+    }
+  },
+  "icons": {
+    "128": "resources/icons/icon.png",
+    "48": "resources/icons/icon.png"
+  }
+}
